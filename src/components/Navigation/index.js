@@ -1,8 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+import { ROUTES } from '../../constants/routes'
 
 const Navigation = () => (
   <div>
-    <h1>Navigation</h1>
+    <ul>
+    {ROUTES.map(l => (<li><Link to={l.url}>{l.name}</Link></li>))}
+    </ul>
   </div>
 );
 
