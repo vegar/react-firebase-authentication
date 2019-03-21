@@ -6,7 +6,7 @@ import { ROUTES } from '../../constants/routes'
 const Navigation = () => (
   <div>
     <ul>
-    {ROUTES.map(l => (<li><Link to={l.url}>{l.name}</Link></li>))}
+    {ROUTES.map(l => (<li key={l.name}><Link to={l.url}>{l.name}</Link></li>))}
     </ul>
   </div>
 );

@@ -3,7 +3,7 @@ export { default as Home  } from './Home';
 export { default as App  } from './App';
 export { default as Account  } from './Account';
 export { default as Admin  } from './Admin';
-export { default as Firebase  } from './Firebase';
+export { Firebase, FirebaseContext  } from './Firebase';
 export { default as Navigation  } from './Navigation';
 export { default as PasswordChange  } from './PasswordChange';
 export { default as PasswordForget  } from './PasswordForget';
