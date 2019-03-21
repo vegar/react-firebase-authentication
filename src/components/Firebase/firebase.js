@@ -15,7 +15,6 @@ export class Firebase {
     constructor() {
         app.initializeApp(config);
 
-        console.log({config});
         this.auth = app.auth();
     }
 
