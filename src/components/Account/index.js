@@ -7,7 +7,7 @@ const Account = () => (
   <AuthUserContext.Consumer>
     {(authUser) => (
       <div>
-        <h1>Account: { authUser.email }</h1>
+        <h1>Account: { authUser.displayName || authUser.email }</h1>
         <PasswordChangeForm />
         <PasswordForgetForm />
       </div>
