@@ -28,7 +28,7 @@ export class Firebase {
     }
 
     doSignOut = () => {
-        return this.auth.doSignOut();
+        return this.auth.signOut();
     }
 
     doPasswordReset = (email) => {
