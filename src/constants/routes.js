@@ -1,5 +1,5 @@
 export const LANDING = { url: '/', name: 'Landing' };
-export const SIGN_UP = { url: '/signup', name: 'Sign out' };
+export const SIGN_UP = { url: '/signup', name: 'Sign up' };
 export const SIGN_IN = { url: '/signin', name: 'Sign in' };
 export const HOME = { url: '/home', name: 'Home' };
 export const ACCOUNT = { url: '/account', name: 'Account' };
