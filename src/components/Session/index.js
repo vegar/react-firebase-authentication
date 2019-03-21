@@ -7,3 +7,5 @@ const Session = () => (
 );
 
 export default Session;
+
+export { withAuthorization } from './withAuthorization';

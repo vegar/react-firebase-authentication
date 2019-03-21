@@ -7,7 +7,7 @@ export { Firebase, FirebaseContext, withFirebase } from './Firebase';
 export { default as Navigation  } from './Navigation';
 export {  PasswordChangeForm } from './PasswordChange';
 export {  PasswordForget, PasswordForgetForm, PasswordForgetLink  } from './PasswordForget';
-export { default as Session  } from './Session';
+export { default as Session, withAuthorization  } from './Session';
 export { default as SignIn  } from './SignIn';
 export { default as SignOutButton  } from './SignOut';
 export { SignUp, SignUpLink  } from './SignUp';
