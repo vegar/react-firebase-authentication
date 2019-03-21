@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 
-import { HOME } from '../../constants/routes';
+import * as ROUTES from '../../constants/routes';
 import { SignUpLink, withFirebase } from '../';
 import { compose } from 'recompose';
 
@@ -23,7 +23,7 @@ class SignInFormBase extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {...INITIAL_STATE};
+    this.state = { ...INITIAL_STATE };
   }
 
   onSubmit = (event) => {
@@ -32,14 +32,14 @@ class SignInFormBase extends Component {
     this.props.firebase
       .doSignInWithEmailAndPassword(email, password)
       .then(() => {
-        this.setState({...INITIAL_STATE});
-        this.props.history.push(HOME.url);
+        this.setState({ ...INITIAL_STATE });
+        this.props.history.push(ROUTES.HOME);
       })
       .catch((error) => {
         this.setState({ error });
       });
 
-      event.preventDefault();
+    event.preventDefault();
   }
 
   onChange = (event) => {

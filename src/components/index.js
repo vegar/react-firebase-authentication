@@ -9,5 +9,5 @@ export { default as PasswordChange  } from './PasswordChange';
 export { default as PasswordForget  } from './PasswordForget';
 export { default as Session  } from './Session';
 export { default as SignIn  } from './SignIn';
-export { default as SignOut  } from './SignOut';
+export { default as SignOutButton  } from './SignOut';
 export { SignUp, SignUpLink  } from './SignUp';
